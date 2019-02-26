@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Login from './components/login';
+import Addlist from './components/addlist';
+import AddMentor from './components/addlist/AddMentor';
+import Error from './components/Error';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
+import Details from './components/details';
+import AddLearner from './components/addlist/AddLearner';
+import Learner from './components/addlist/Learner'; 
+import Mentor from './components/addlist/Mentor';
+import Database from './components/addlist/Database';
+//import AddLearner from './components/addlist'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Login}></Route>
+          <Route exact path="/Learner" component={Learner}></Route>
+          <Route exact path="/Mentor" component={Mentor}></Route>
+          <Route exact path="/Database" component={Database}></Route>
+          <Route exact Path="/details" component={Details}></Route>
+          <Route component={Error}></Route>
+        </Switch>
+      </Router>
     );
   }
 }

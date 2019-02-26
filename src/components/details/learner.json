@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Anantha",
+        "email": "ananthamadhava95@gmail.com",
+        "phone": "9740544464",
+        "alterPhone": "8618444341",
+        "primary": "React",
+        "secondary": "Node",
+        "address": "Hoskerehalli",
+        "doj": "28-1-2019"
+    },
+    {
+        "id": 2,
+        "name": "Arun",
+        "email": "arun@gmail.com",
+        "phone": "123456789",
+        "alterPhone": "9876554321",
+        "primary": "React",
+        "secondary": "Node",
+        "address": "ullala",
+        "doj": "12-1-2019"
+    }
+]
